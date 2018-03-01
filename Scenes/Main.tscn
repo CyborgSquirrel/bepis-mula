@@ -1,0 +1,42 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Scripts/Player.gd" type="Script" id=1]
+[ext_resource path="res://Textures/Source/player.png" type="Texture" id=2]
+[ext_resource path="res://Mini Scenes/Wall.tscn" type="PackedScene" id=3]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+custom_solver_bias = 0.0
+extents = Vector2( 38.5514, 12.71 )
+
+[node name="Main" type="Node2D" index="0"]
+
+[node name="Bullets" type="Node2D" parent="." index="0"]
+
+[node name="Player" type="KinematicBody2D" parent="." index="1"]
+
+position = Vector2( 494.384, 324.852 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+collision/safe_margin = 0.08
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Player" index="0"]
+
+scale = Vector2( 0.25, 0.25 )
+texture = ExtResource( 2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player" index="1"]
+
+shape = SubResource( 1 )
+
+[node name="Wall" parent="." index="2" instance=ExtResource( 3 )]
+
+position = Vector2( 473.157, 212.225 )
+
+

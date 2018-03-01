@@ -9,7 +9,7 @@
 custom_solver_bias = 0.0
 extents = Vector2( 38.5514, 12.71 )
 
-[node name="Main" type="Node2D" index="0"]
+[node name="Main" type="Node2D"]
 
 [node name="Bullets" type="Node2D" parent="." index="0"]
 
@@ -34,6 +34,7 @@ _sections_unfolded = [ "Transform" ]
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player" index="1"]
 
 shape = SubResource( 1 )
+_sections_unfolded = [ "Transform" ]
 
 [node name="Wall" parent="." index="2" instance=ExtResource( 3 )]
 

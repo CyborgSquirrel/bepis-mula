@@ -1,15 +1,15 @@
-extends KinematicBody2D
+extends RigidBody2D
 
-var velocity = Vector2(0, 0)
-const VELOCITY_SCALAR = 10
+const VELOCITY_SCALAR = 1000
 
 func _ready():
 	pass
 
 func setup(position, rotation):
-	self.position = position
+	var angle = Vector2(cos(rotation + PI / 2), sin(rotation + PI / 2))
+	self.position = position + angle * 30
 	self.rotation = rotation
-	velocity = Vector2(cos(rotation + PI / 2), sin(rotation + PI / 2)) * VELOCITY_SCALAR
+	set_linear_velocity(angle * VELOCITY_SCALAR)
 
 func _process(delta):
-	position += velocity
+	pass

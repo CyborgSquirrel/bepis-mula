@@ -13,6 +13,7 @@ height = 12.0
 "Pots",
 ]]
 
+editor/display_folded = true
 position = Vector2( 32, 32 )
 input_pickable = false
 collision_layer = 1

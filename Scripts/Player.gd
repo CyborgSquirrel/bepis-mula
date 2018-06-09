@@ -14,7 +14,7 @@ func _movement():
 	input.x = int(Input.is_action_pressed("ui_right")) - int(Input.is_action_pressed("ui_left"))
 	input.y = int(Input.is_action_pressed("ui_down")) - int(Input.is_action_pressed("ui_up"))
 	velocity = input.normalized() * SPEED
-	position += velocity
+	move_and_collide(velocity)
 
 func _shooting():
 	if Input.is_action_pressed("char_shoot"):

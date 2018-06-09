@@ -10,7 +10,7 @@ source_file="res://Textures/PotSprite.png"
 source_md5="d77e603895519c54cd18042ae776092f"
 
 dest_files=[ "res://.import/PotSprite.png-7f395bf6fd673a09d4f28f798663b584.stex" ]
-dest_md5="aea53cf7748b38ce1be2c5b500b56a4b"
+dest_md5="e68fcb7271f244e6baf73da6e194970d"
 
 [params]
 
@@ -19,7 +19,7 @@ compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

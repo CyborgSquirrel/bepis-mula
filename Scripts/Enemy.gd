@@ -11,7 +11,7 @@ func _approach_player():
 	var player = root.get_node("Player")
 	var angle = get_angle_to(player.position)
 	var velocity = Vector2(cos(angle), sin(angle)) * SPEED
-	position += velocity
+	move_and_collide(velocity)
 
 func _physics_process(delta):
 	_approach_player()

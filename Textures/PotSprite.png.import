@@ -2,14 +2,14 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/PotSprite.png-18ff2de21e396c1a34419112199d9e37.stex"
+path="res://.import/PotSprite.png-7f395bf6fd673a09d4f28f798663b584.stex"
 
 [deps]
 
-source_file="res://Sprites/PotSprite.png"
+source_file="res://Textures/PotSprite.png"
 source_md5="d77e603895519c54cd18042ae776092f"
 
-dest_files=[ "res://.import/PotSprite.png-18ff2de21e396c1a34419112199d9e37.stex" ]
+dest_files=[ "res://.import/PotSprite.png-7f395bf6fd673a09d4f28f798663b584.stex" ]
 dest_md5="aea53cf7748b38ce1be2c5b500b56a4b"
 
 [params]

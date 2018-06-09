@@ -9,7 +9,7 @@ custom_solver_bias = 0.0
 radius = 24.0
 height = 12.0
 
-[node name="Pot" type="RigidBody2D" groups=[
+[node name="Pot" type="RigidBody2D" index="0" groups=[
 "Pots",
 ]]
 
@@ -21,7 +21,7 @@ mode = 0
 mass = 1.0
 friction = 1.0
 bounce = 0.0
-gravity_scale = 1.0
+gravity_scale = 0.0
 custom_integrator = false
 continuous_cd = 0
 contacts_reported = 0

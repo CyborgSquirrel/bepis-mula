@@ -4,15 +4,7 @@
 [ext_resource path="res://Mini Scenes/pot.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Mini Scenes/enemy.tscn" type="PackedScene" id=3]
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-[node name="Node2D" type="Node2D"]
-=======
-[node name="Game" type="Node2D"]
->>>>>>> 32f51786d71610c6ee72054172ccf464d3c4839c
-=======
 [node name="Game" type="Node2D" index="0"]
->>>>>>> 0bbc401f01e9b7535209d79437db555c6c704098
 
 [node name="Node" parent="." index="0" instance=ExtResource( 1 )]
 
@@ -25,5 +17,3 @@ position = Vector2( 159, 66 )
 [node name="Enemy" parent="." index="2" instance=ExtResource( 3 )]
 
 position = Vector2( 169, 181 )
-
-

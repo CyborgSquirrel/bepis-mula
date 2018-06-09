@@ -1,13 +1,14 @@
 extends KinematicBody2D
 
-# class member variables go here, for example:
-# var a = 2
-# var b = "textvar"
+const SPEED = 20
 
 func _ready():
 	set_physics_process(true)
-	pass
 
 func _physics_process(delta):
-	
-	pass
+	var velocity = Vector2()
+	var input = Vector2()
+	input.x = int(Input.is_action_pressed("ui_right")) - int(Input.is_action_pressed("ui_left"))
+	input.y = int(Input.is_action_pressed("ui_down")) - int(Input.is_action_pressed("ui_up"))
+	velocity = input.normalized() * SPEED
+	position += velocity

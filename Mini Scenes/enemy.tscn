@@ -2,7 +2,7 @@
 
 [ext_resource path="res://Textures/enemy.png" type="Texture" id=1]
 
-[node name="Node" type="Node" index="0"]
+[node name="Node" type="Node"]
 
 [node name="Enemy" type="KinematicBody2D" parent="." index="0"]
 

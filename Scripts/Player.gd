@@ -17,10 +17,12 @@ func _movement():
 	position += velocity
 
 func _shooting():
-	if Input.is_action_just_pressed("char_shoot"):
-		root.add_child(pot.instance())
-		pass
-	pass
+	if Input.is_action_pressed("char_shoot"):
+		var pot_instance = pot.instance()
+		pot_instance.position = position
+		var angle = get_angle_to(get_viewport().get_mouse_position())
+		pot_instance.linear_velocity = Vector2(cos(angle), sin(angle)) * 1000
+		root.add_child(pot_instance)
 
 func _physics_process(delta):
 	_movement()

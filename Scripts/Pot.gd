@@ -9,5 +9,5 @@ func _physics_process(delta):
 	
 	for body in bodies:
 		if body.is_in_group("Enemies"):
-			print("haha")
+			body.free()
 			free()

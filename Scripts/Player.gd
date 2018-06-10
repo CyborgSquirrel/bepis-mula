@@ -4,7 +4,7 @@ var pot = preload("res://Mini Scenes/pot.tscn")
 var root
 
 # VARIABLES
-const SPEED = 20
+const SPEED = 10
 const SHOOT_DELAY = 0.2
 #TODO: move this to pot.gd
 const POT_SPEED = 500

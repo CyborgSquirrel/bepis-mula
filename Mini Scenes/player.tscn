@@ -8,7 +8,7 @@
 custom_solver_bias = 0.0
 radius = 46.0
 
-[node name="Player" type="KinematicBody2D" index="0"]
+[node name="Player" type="KinematicBody2D"]
 
 position = Vector2( 32, 32 )
 input_pickable = false
@@ -31,5 +31,15 @@ _sections_unfolded = [ "Z Index" ]
 visible = false
 position = Vector2( 2, 0 )
 shape = SubResource( 1 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Timer" type="Timer" parent="." index="2"]
+
+process_mode = 1
+wait_time = 0.2
+one_shot = true
+autostart = false
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
 
 

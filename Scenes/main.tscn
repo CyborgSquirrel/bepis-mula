@@ -1,10 +1,9 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Mini Scenes/Background.res" type="TileSet" id=1]
 [ext_resource path="res://Mini Scenes/player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Mini Scenes/enemy.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Mini Scenes/Foreground.res" type="TileSet" id=4]
-[ext_resource path="res://Mini Scenes/Spawner.tscn" type="PackedScene" id=5]
 
 [node name="Game" type="Node2D" index="0"]
 
@@ -92,11 +91,5 @@ _sections_unfolded = [ "Cell", "Collision" ]
 __meta__ = {
 "_edit_lock_": true
 }
-
-[node name="Spawner" parent="." index="4" instance=ExtResource( 5 )]
-
-position = Vector2( 709.434, 224.803 )
-entity = ExtResource( 3 )
-delay = 0.5
 
 

@@ -30,8 +30,7 @@ func _movement():
 func _shoot():
 	var pot_instance = pot.instance()
 	pot_instance.position = position
-	var angle = get_angle_to(get_viewport().get_mouse_position())
-	pot_instance.linear_velocity = Vector2(cos(angle), sin(angle)) * POT_SPEED
+	pot_instance.linear_velocity = get_local_mouse_position().normalized() * POT_SPEED
 	root.add_child(pot_instance)
 	$Timer.start()
 

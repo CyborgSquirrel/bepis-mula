@@ -51,7 +51,7 @@ func _shooting():
 
 func _physics_process(delta):
 	_movement()
-	if can_shoot == true:
+	if can_shoot:
 		_shooting()
 		can_shoot = false
 	

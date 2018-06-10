@@ -11,9 +11,7 @@ func _ready():
 	set_physics_process(true)
 	
 	# TIMER INITIALIZATION
-	$Timer.set_one_shot(true)
 	$Timer.set_wait_time(BROKE_DELAY)
-	$Timer.connect("timeout", self, "on_timeout_complete")
 	
 func on_timeout_complete():
 	queue_free()

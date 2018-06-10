@@ -6,8 +6,6 @@ var root
 # VARIABLES
 const SPEED = 10
 const SHOOT_DELAY = 0.2
-#TODO: move this to pot.gd
-const POT_SPEED = 500
 
 var can_shoot = true
 
@@ -30,7 +28,7 @@ func _movement():
 func _shoot():
 	var pot_instance = pot.instance()
 	pot_instance.position = position
-	pot_instance.linear_velocity = get_local_mouse_position().normalized() * POT_SPEED
+	pot_instance.linear_velocity = get_local_mouse_position().normalized() * pot_instance.SPEED
 	root.add_child(pot_instance)
 	$Timer.start()
 

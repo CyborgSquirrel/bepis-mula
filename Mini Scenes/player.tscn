@@ -8,16 +8,15 @@
 custom_solver_bias = 0.0
 radius = 46.0
 
-[node name="Player" type="KinematicBody2D"]
+[node name="Player" type="KinematicBody2D" index="0"]
 
-editor/display_folded = true
 position = Vector2( 32, 32 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
 collision/safe_margin = 0.08
 script = ExtResource( 1 )
-_sections_unfolded = [ "Collision", "Transform", "collision" ]
+_sections_unfolded = [ "Collision", "Pickable", "Transform", "Visibility", "Z Index", "collision" ]
 __meta__ = {
 "_edit_group_": true
 }
@@ -25,6 +24,7 @@ __meta__ = {
 [node name="Sprite" type="Sprite" parent="." index="0"]
 
 texture = ExtResource( 2 )
+_sections_unfolded = [ "Z Index" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." index="1"]
 

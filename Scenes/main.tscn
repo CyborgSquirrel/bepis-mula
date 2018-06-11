@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Mini Scenes/player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Mini Scenes/Foreground.res" type="TileSet" id=2]
@@ -7,10 +7,23 @@
 [ext_resource path="res://Mini Scenes/ForegroundShadows.res" type="TileSet" id=5]
 [ext_resource path="res://Mini Scenes/Background.res" type="TileSet" id=6]
 
+[sub_resource type="Shader" id=1]
+
+code = "shader_type canvas_item;
+//void fragment(){
+//	if(COLOR.a)
+//}"
+
+[sub_resource type="ShaderMaterial" id=2]
+
+render_priority = 0
+shader = SubResource( 1 )
+
 [node name="Game" type="Node2D" index="0"]
 
 [node name="Player" parent="." index="0" instance=ExtResource( 1 )]
 
+editor/display_folded = true
 position = Vector2( 158.806, 257.177 )
 
 [node name="Camera2D" type="Camera2D" parent="Player" index="3"]
@@ -68,9 +81,15 @@ __meta__ = {
 
 position = Vector2( 408, 210 )
 
-[node name="Shadows" type="TileMap" parent="." index="3"]
+[node name="Shadows" type="Node2D" parent="." index="3"]
 
+material = SubResource( 2 )
 z_index = -1
+_sections_unfolded = [ "Material", "Z Index" ]
+
+[node name="Foreground" type="TileMap" parent="Shadows" index="0"]
+
+use_parent_material = true
 mode = 0
 tile_set = ExtResource( 5 )
 cell_size = Vector2( 32, 32 )
@@ -88,7 +107,7 @@ collision_mask = 1
 occluder_light_mask = 1
 format = 1
 tile_data = PoolIntArray(  )
-_sections_unfolded = [ "Cell", "Z Index" ]
+_sections_unfolded = [ "Cell", "Material", "Z Index" ]
 
 [node name="Background" type="TileMap" parent="." index="4"]
 

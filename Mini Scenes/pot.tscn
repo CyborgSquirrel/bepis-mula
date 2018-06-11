@@ -9,7 +9,7 @@ custom_solver_bias = 0.0
 radius = 24.0
 height = 12.0
 
-[node name="Pot" type="RigidBody2D" index="0" groups=[
+[node name="Pot" type="RigidBody2D" groups=[
 "Pots",
 ]]
 

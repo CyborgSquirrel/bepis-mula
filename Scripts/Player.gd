@@ -13,9 +13,6 @@ func _ready():
 	set_physics_process(true)
 	root = get_tree().get_root().get_node("Game")
 
-func _draw():
-	pass
-
 # If timer stopped
 func _on_Timer_timeout():
 	can_shoot = true

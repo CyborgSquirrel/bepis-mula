@@ -58,3 +58,5 @@ one_shot = true
 autostart = false
 
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
+
+

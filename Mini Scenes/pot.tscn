@@ -6,14 +6,15 @@
 [sub_resource type="CapsuleShape2D" id=1]
 
 custom_solver_bias = 0.0
-radius = 24.0
-height = 12.0
+radius = 12.0
+height = 6.0
 
 [node name="Pot" type="RigidBody2D" groups=[
 "Pots",
 ]]
 
-position = Vector2( 32, 32 )
+editor/display_folded = true
+position = Vector2( 16, 16 )
 input_pickable = false
 collision_layer = 2
 collision_mask = 2
@@ -33,21 +34,17 @@ linear_damp = -1.0
 angular_velocity = 0.0
 angular_damp = -1.0
 script = ExtResource( 1 )
-_sections_unfolded = [ "Angular", "Collision" ]
-__meta__ = {
-"_edit_group_": true
-}
+_sections_unfolded = [ "Angular", "Collision", "Transform" ]
 
 [node name="Sprite" type="Sprite" parent="." index="0"]
 
-position = Vector2( 6, 4 )
-scale = Vector2( 4, 4 )
+position = Vector2( 3, 2 )
+scale = Vector2( 2, 2 )
 texture = ExtResource( 2 )
 _sections_unfolded = [ "Offset", "Transform", "Z Index" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." index="1"]
 
-visible = false
 shape = SubResource( 1 )
 
 [node name="Timer" type="Timer" parent="." index="2"]

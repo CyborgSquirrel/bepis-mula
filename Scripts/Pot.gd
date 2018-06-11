@@ -4,6 +4,7 @@ var broken_pot_sprite = preload("res://Textures/BrokenPotSprite.png")
 
 
 # VARIABLES
+const SPEED = 500
 const BROKE_DELAY = 0.15
 
 
@@ -13,7 +14,7 @@ func _ready():
 	# TIMER INITIALIZATION
 	$Timer.set_wait_time(BROKE_DELAY)
 	
-func on_timeout_complete():
+func _on_Timer_timeout():
 	queue_free()
 
 

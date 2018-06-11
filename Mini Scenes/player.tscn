@@ -1,16 +1,18 @@
 [gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Scripts/Player.gd" type="Script" id=1]
-[ext_resource path="res://Textures/player.png" type="Texture" id=2]
+[ext_resource path="res://Textures/PlayerSprite.png" type="Texture" id=2]
 
-[sub_resource type="RectangleShape2D" id=1]
+[sub_resource type="CapsuleShape2D" id=1]
 
 custom_solver_bias = 0.0
-extents = Vector2( 32, 32 )
+radius = 14.0
+height = 36.0
 
 [node name="Player" type="KinematicBody2D"]
 
-position = Vector2( 32, 32 )
+position = Vector2( 16, 16 )
+scale = Vector2( 0.5, 0.5 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -20,14 +22,16 @@ _sections_unfolded = [ "Collision", "Pickable", "Transform", "Visibility", "Z In
 
 [node name="Sprite" type="Sprite" parent="." index="0"]
 
-scale = Vector2( 0.697674, 0.67037 )
+position = Vector2( -1, -0.969696 )
+scale = Vector2( 1.9375, 1.93939 )
 texture = ExtResource( 2 )
 _sections_unfolded = [ "Offset", "Transform", "Z Index" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." index="1"]
 
-visible = false
+position = Vector2( -4, -2 )
 shape = SubResource( 1 )
+_sections_unfolded = [ "Transform" ]
 
 [node name="Timer" type="Timer" parent="." index="2"]
 

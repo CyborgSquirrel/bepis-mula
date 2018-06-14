@@ -85,9 +85,7 @@ __meta__ = {
 
 position = Vector2( 408, 210 )
 
-[node name="Shadows" type="Node2D" parent="." index="3"]
-
-[node name="Sprite" type="Sprite" parent="Shadows" index="0"]
+[node name="Shadows" type="Sprite" parent="." index="3"]
 
 position = Vector2( 182.965, 215.787 )
 z_index = -1
@@ -96,7 +94,7 @@ centered = false
 script = ExtResource( 5 )
 _sections_unfolded = [ "Offset", "Region", "Transform" ]
 
-[node name="Viewport" type="Viewport" parent="Shadows" index="1"]
+[node name="Viewport" type="Viewport" parent="Shadows" index="0"]
 
 arvr = false
 size = Vector2( 0, 0 )

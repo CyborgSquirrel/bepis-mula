@@ -94,7 +94,7 @@ z_index = -1
 texture = SubResource( 1 )
 centered = false
 script = ExtResource( 5 )
-_sections_unfolded = [ "Offset", "Transform" ]
+_sections_unfolded = [ "Offset", "Region", "Transform" ]
 
 [node name="Viewport" type="Viewport" parent="Shadows" index="1"]
 

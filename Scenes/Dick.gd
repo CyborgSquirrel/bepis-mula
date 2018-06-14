@@ -5,3 +5,5 @@ func _ready():
 
 func _process(delta):
 	position -= get_global_transform_with_canvas().origin
+	#This is a terrible hack to get the sprite to update when the viewport texture's size changes
+	centered = false

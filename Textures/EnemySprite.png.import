@@ -7,10 +7,7 @@ path="res://.import/EnemySprite.png-476796322b003d982c0afd1c61087294.stex"
 [deps]
 
 source_file="res://Textures/EnemySprite.png"
-source_md5="fbdfd4c5132cb598b63463fd6467f452"
-
 dest_files=[ "res://.import/EnemySprite.png-476796322b003d982c0afd1c61087294.stex" ]
-dest_md5="eda7281cb2fe9a3e798cbc1c21f81a9f"
 
 [params]
 

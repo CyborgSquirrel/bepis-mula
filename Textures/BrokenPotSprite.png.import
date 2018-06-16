@@ -7,10 +7,7 @@ path="res://.import/BrokenPotSprite.png-501d3c1ba5e284d6a4e0e464cc2bf036.stex"
 [deps]
 
 source_file="res://Textures/BrokenPotSprite.png"
-source_md5="491fba78fd2e684ca7400b50fb38d68e"
-
 dest_files=[ "res://.import/BrokenPotSprite.png-501d3c1ba5e284d6a4e0e464cc2bf036.stex" ]
-dest_md5="7cc445dfb74578a1784034746829a5b0"
 
 [params]
 

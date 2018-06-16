@@ -19,7 +19,7 @@ code = "shader_type canvas_item;
 render_priority = 0
 shader = SubResource( 1 )
 
-[node name="Game" type="Node2D"]
+[node name="Game" type="Node2D" index="0"]
 
 [node name="Player" parent="." index="0" instance=ExtResource( 1 )]
 

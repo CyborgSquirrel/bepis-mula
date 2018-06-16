@@ -7,10 +7,7 @@ path="res://.import/wallShadow.png-43a038a07520837e0fe9c5c765feefd8.stex"
 [deps]
 
 source_file="res://Textures/wallShadow.png"
-source_md5="0be558ec30161e31a09f7b3613663f2e"
-
 dest_files=[ "res://.import/wallShadow.png-43a038a07520837e0fe9c5c765feefd8.stex" ]
-dest_md5="d5d5c48914917ad70853dffb5ee8bfe8"
 
 [params]
 

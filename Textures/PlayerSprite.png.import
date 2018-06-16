@@ -7,10 +7,7 @@ path="res://.import/PlayerSprite.png-6d998d0ca45c92280d769bd5a7da3c52.stex"
 [deps]
 
 source_file="res://Textures/PlayerSprite.png"
-source_md5="e7b4e9c9d15a191d4b649105c95a86c4"
-
 dest_files=[ "res://.import/PlayerSprite.png-6d998d0ca45c92280d769bd5a7da3c52.stex" ]
-dest_md5="f6c9643fd5e0cea813003d9bddd46d88"
 
 [params]
 

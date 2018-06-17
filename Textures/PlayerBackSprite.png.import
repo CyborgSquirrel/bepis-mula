@@ -7,10 +7,7 @@ path="res://.import/PlayerBackSprite.png-752816509a7be50671286b81c9610376.stex"
 [deps]
 
 source_file="res://Textures/PlayerBackSprite.png"
-source_md5="df8ebc20eefeff9152caddf79e20e0a2"
-
 dest_files=[ "res://.import/PlayerBackSprite.png-752816509a7be50671286b81c9610376.stex" ]
-dest_md5="355f01acbfc7768278378301800e9fdc"
 
 [params]
 

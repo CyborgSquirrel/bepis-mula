@@ -7,10 +7,7 @@ path="res://.import/undicked.png-c5c8a8f4426336ba62e49665307973bc.stex"
 [deps]
 
 source_file="res://Textures/undicked.png"
-source_md5="46bd3cc62ce4ce52af13fbcc1f419053"
-
 dest_files=[ "res://.import/undicked.png-c5c8a8f4426336ba62e49665307973bc.stex" ]
-dest_md5="3ee4f750566eaa9355e1217f2c8d643b"
 
 [params]
 
@@ -19,7 +16,7 @@ compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
@@ -28,5 +25,5 @@ process/premult_alpha=false
 process/HDR_as_SRGB=false
 stream=false
 size_limit=0
-detect_3d=true
+detect_3d=false
 svg/scale=1.0

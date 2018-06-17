@@ -7,10 +7,7 @@ path="res://.import/Tileset.png-a4ff4b01461a7448be9040aa350dceb4.stex"
 [deps]
 
 source_file="res://Textures/Tileset.png"
-source_md5="2e7068dae93314325835fa6565770475"
-
 dest_files=[ "res://.import/Tileset.png-a4ff4b01461a7448be9040aa350dceb4.stex" ]
-dest_md5="0267fe45d74e77c4dcd24bc65906e360"
 
 [params]
 
